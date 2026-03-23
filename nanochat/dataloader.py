@@ -15,7 +15,9 @@ now attend back to the BOS token and sees the full context of the document.
 Fallback to the original if you have very limited data AND long documents:
 https://github.com/karpathy/nanochat/blob/3c3a3d7/nanochat/dataloader.py#L78-L117
 """
-
+import os
+import glob
+import numpy as np
 import torch
 import pyarrow.parquet as pq
 
@@ -164,3 +166,96 @@ def tokenizing_distributed_data_loader_bos_bestfit(*args, **kwargs):
     """Helper that omits state_dict from yields."""
     for inputs, targets, state_dict in tokenizing_distributed_data_loader_with_state_bos_bestfit(*args, **kwargs):
         yield inputs, targets
+
+def bin_distributed_data_loader_with_state(data_dir, B, T, split, device="cuda", resume_state_dict=None, dtype=np.uint16, val_ratio=0.05):
+    """
+    Custom dataloader for pre-tokenized .bin files with AUTOMATIC train/val splitting.
+    Streams data directly using np.memmap and shards correctly across DDP ranks.
+    """
+    ddp, ddp_rank, ddp_local_rank, ddp_world_size = get_dist_info()
+
+    # Find all subdirectories (e.g., data/pubmed, data/fineweb, data/reasoning)
+    subdirs = sorted([d for d in glob.glob(os.path.join(data_dir, "*")) if os.path.isdir(d)])
+    
+    # Fallback: if no subdirs exist, just treat the main data_dir as the only folder
+    if not subdirs:
+        subdirs = [data_dir]
+
+    split_files = []
+    
+    # Iterate through each folder to ensure proportional representation in the split
+    for subdir in subdirs:
+        # Grab all .bin files in this specific folder and sort them deterministically
+        files = sorted(glob.glob(os.path.join(subdir, "*.bin")))
+        if not files:
+            continue
+            
+        # Calculate how many files to reserve for validation (minimum 1, unless there's only 1 file total)
+        num_files = len(files)
+        num_val_files = max(1, int(num_files * val_ratio)) if num_files > 1 else 0
+        num_train_files = num_files - num_val_files
+        
+        # Route the files based on the requested split
+        if split == "train":
+            split_files.extend(files[:num_train_files])
+        elif split in ["val", "valid"]:
+            split_files.extend(files[num_train_files:])
+
+    # Final global sort to guarantee perfect sync across all DDP GPU ranks
+    bin_files = sorted(split_files)
+    assert len(bin_files) > 0, f"No .bin files found for split '{split}' inside {data_dir}"
+
+    if ddp_rank == 0:
+        print(f"Dataloader [{split}]: Loaded {len(bin_files)} files.")
+
+    # Handle resuming from a checkpoint
+    if resume_state_dict is not None:
+        bin_idx = resume_state_dict.get("bin_idx", 0)
+        token_idx = resume_state_dict.get("token_idx", 0)
+        epoch = resume_state_dict.get("epoch", 1)
+    else:
+        bin_idx, token_idx, epoch = 0, 0, 1
+
+    while True:
+        filepath = bin_files[bin_idx]
+        
+        # Memory-map the file (reads directly from disk, zero overhead)
+        data = np.memmap(filepath, dtype=dtype, mode='r')
+        num_tokens = len(data)
+
+        tokens_per_step = B * T
+        world_tokens_per_step = tokens_per_step * ddp_world_size
+
+        # Yield chunks until the file is exhausted
+        while token_idx + world_tokens_per_step + 1 <= num_tokens:
+            # Calculate the exact slice for THIS specific GPU rank
+            start_idx = token_idx + (ddp_rank * tokens_per_step)
+            end_idx = start_idx + tokens_per_step + 1
+
+            # Read slice, convert to tensor, and push to GPU
+            chunk = data[start_idx:end_idx].astype(np.int64)
+            chunk_tensor = torch.tensor(chunk, dtype=torch.long, device=device)
+
+            x = chunk_tensor[:-1].view(B, T)
+            y = chunk_tensor[1:].view(B, T)
+
+            # We pass dummy pq_idx/rg_idx so the print statements in base_train.py don't crash
+            state_dict = {
+                "bin_idx": bin_idx, 
+                "token_idx": token_idx, 
+                "epoch": epoch, 
+                "pq_idx": bin_idx, 
+                "rg_idx": token_idx
+            }
+
+            yield x, y, state_dict
+
+            # Advance the pointer by the total tokens processed by ALL GPUs combined
+            token_idx += world_tokens_per_step
+
+        # Move to the next file when this one is done
+        bin_idx += 1
+        token_idx = 0
+        if bin_idx >= len(bin_files):
+            bin_idx = 0
+            epoch += 1

@@ -12,6 +12,7 @@ python -m scripts.base_train --depth=4 --max-seq-len=512 --device-batch-size=1 -
 """
 
 import os
+import numpy as np
 os.environ["PYTORCH_ALLOC_CONF"] = "expandable_segments:True"
 import gc
 import json
@@ -26,7 +27,7 @@ import torch
 import torch.distributed as dist
 
 from nanochat.gpt import GPT, GPTConfig, Linear
-from nanochat.dataloader import tokenizing_distributed_data_loader_bos_bestfit, tokenizing_distributed_data_loader_with_state_bos_bestfit
+from nanochat.dataloader import bin_distributed_data_loader_with_state
 from nanochat.common import compute_init, compute_cleanup, print0, DummyWandb, print_banner, get_base_dir, autodetect_device_type, get_peak_flops, COMPUTE_DTYPE, COMPUTE_DTYPE_REASON, is_ddp_initialized
 from nanochat.tokenizer import get_tokenizer, get_token_bytes
 from nanochat.checkpoint_manager import save_checkpoint, load_checkpoint
@@ -76,8 +77,12 @@ parser.add_argument("--core-metric-max-per-task", type=int, default=500, help="e
 parser.add_argument("--sample-every", type=int, default=2000, help="sample from model every N steps (-1 = disable)")
 parser.add_argument("--save-every", type=int, default=-1, help="save checkpoints every N steps (-1 = only at end)")
 # Output
+# CHANGE TO:
 parser.add_argument("--model-tag", type=str, default=None, help="override model tag for checkpoint directory name")
+parser.add_argument("--data-dir", type=str, default="data", help="path to directory containing .bin shard subfolders")
 args = parser.parse_args()
+
+
 user_config = vars(args).copy()  # for logging
 # -----------------------------------------------------------------------------
 # Compute init and wandb logging
@@ -326,11 +331,38 @@ if scaler is not None:
 
 # -----------------------------------------------------------------------------
 # Initialize the DataLoaders for train/val
+# Initialize the DataLoaders for train/val using our custom .bin loader
+# Initialize the DataLoaders for train/val using our custom .bin loader
 dataloader_resume_state_dict = None if not resuming else meta_data["dataloader_state_dict"]
-train_loader = tokenizing_distributed_data_loader_with_state_bos_bestfit(tokenizer, args.device_batch_size, args.max_seq_len, split="train", device=device, resume_state_dict=dataloader_resume_state_dict)
-build_val_loader = lambda: tokenizing_distributed_data_loader_bos_bestfit(tokenizer, args.device_batch_size, args.max_seq_len, split="val", device=device)
-x, y, dataloader_state_dict = next(train_loader) # kick off load of the very first batch of data
 
+# Set this to the parent folder containing your pubmed, fineweb, and reasoning folders
+MY_DATA_DIR = args.data_dir
+
+train_loader = bin_distributed_data_loader_with_state(
+    data_dir=MY_DATA_DIR, 
+    B=args.device_batch_size, 
+    T=args.max_seq_len, 
+    split="train", 
+    device=device, 
+    resume_state_dict=dataloader_resume_state_dict,
+    val_ratio=0.05,       # Reserves 5% of files in each sub-folder for validation
+    dtype=np.uint16       # Change to np.uint32 if your custom vocab size is > 65,535
+)
+
+def build_val_loader():
+    loader = bin_distributed_data_loader_with_state(
+        data_dir=MY_DATA_DIR, 
+        B=args.device_batch_size, 
+        T=args.max_seq_len, 
+        split="val", 
+        device=device,
+        val_ratio=0.05,       # Must match the train_loader!
+        dtype=np.uint16       # Must match the train_loader!
+    )
+    for x, y, state in loader:
+        yield x, y
+
+x, y, dataloader_state_dict = next(train_loader) # kick off load of the very first batch of data # kick off load of the very first batch of data
 # -----------------------------------------------------------------------------
 # Calculate the number of iterations we will train for and set up the various schedulers
 
