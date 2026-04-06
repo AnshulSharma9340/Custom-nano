@@ -6,41 +6,58 @@ import os
 import time
 import argparse
 import torch
+import json
+import glob
 from nanochat.tokenizer import RustBPETokenizer
 from nanochat.common import get_base_dir
-from nanochat.dataset import parquets_iter_batched
 
 # -----------------------------------------------------------------------------
 # Parse command line arguments
 
 parser = argparse.ArgumentParser(description='Train a BPE tokenizer')
-parser.add_argument('--max-chars', type=int, default=2_000_000_000, help='Maximum characters to train on (default: 10B)')
-parser.add_argument('--doc-cap', type=int, default=10_000, help='Maximum characters per document (default: 10,000)')
-parser.add_argument('--vocab-size', type=int, default=32768, help='Vocabulary size (default: 32768 = 2^15)')
+parser.add_argument('--max-chars',  type=int, default=2_000_000_000, help='Maximum characters to train on (default: 2B)')
+parser.add_argument('--doc-cap',    type=int, default=10_000,        help='Maximum characters per document (default: 10,000)')
+parser.add_argument('--vocab-size', type=int, default=32768,         help='Vocabulary size (default: 32768 = 2^15)')
+parser.add_argument('--data-dir',   type=str, required=True,         help='Directory containing JSONL files')
+parser.add_argument('--text-field', type=str, default="text",        help='JSON field name for text (default: text)')
 args = parser.parse_args()
-print(f"max_chars: {args.max_chars:,}")
-print(f"doc_cap: {args.doc_cap:,}")
+print(f"max_chars:  {args.max_chars:,}")
+print(f"doc_cap:    {args.doc_cap:,}")
 print(f"vocab_size: {args.vocab_size:,}")
+print(f"data_dir:   {args.data_dir}")
+print(f"text_field: {args.text_field}")
 
 # -----------------------------------------------------------------------------
 # Text iterator
 
 def text_iterator():
     """
-    1) Flatten the batches into a single iterator
+    1) Read JSONL files from --data-dir
     2) Crop every document to args.doc_cap characters
     3) Break when we've seen args.max_chars characters
     """
     nchars = 0
-    for batch in parquets_iter_batched(split="train"):
-        for doc in batch:
-            doc_text = doc
-            if len(doc_text) > args.doc_cap:
-                doc_text = doc_text[:args.doc_cap]
-            nchars += len(doc_text)
-            yield doc_text
-            if nchars > args.max_chars:
-                return
+    files  = sorted(glob.glob(os.path.join(args.data_dir, "*.jsonl")))
+    assert files, f"No .jsonl files found in {args.data_dir}"
+    print(f"Found {len(files)} JSONL files in {args.data_dir}")
+    for fpath in files:
+        print(f"  Reading {os.path.basename(fpath)} ...")
+        with open(fpath, encoding="utf-8") as f:
+            for line in f:
+                try:
+                    text = json.loads(line).get(args.text_field, "")
+                    if len(text) < 30:
+                        continue
+                    if len(text) > args.doc_cap:
+                        text = text[:args.doc_cap]
+                    nchars += len(text)
+                    yield text
+                    if nchars >= args.max_chars:
+                        print(f"  Reached {args.max_chars:,} chars — stopping.")
+                        return
+                except Exception:
+                    continue
+
 text_iter = text_iterator()
 
 # -----------------------------------------------------------------------------
