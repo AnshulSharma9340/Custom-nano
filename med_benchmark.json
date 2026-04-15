@@ -1,0 +1,1103 @@
+[
+{
+"id": 1,
+"question": "A 45-year-old man presents with sudden onset of severe, tearing chest pain radiating to his back. His blood pressure is 100/60 mmHg in the right arm and 80/50 mmHg in the left arm. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Acute myocardial infarction",
+"B": "Pulmonary embolism",
+"C": "Aortic dissection",
+"D": "Pericarditis"
+},
+"correct_answer": "C"
+},
+{
+"id": 2,
+"question": "Which of the following is the first-line treatment for anaphylaxis in the prehospital setting?",
+"options": {
+"A": "Oral diphenhydramine",
+"B": "Intramuscular epinephrine",
+"C": "Intravenous corticosteroids",
+"D": "Nebulized albuterol"
+},
+"correct_answer": "B"
+},
+{
+"id": 3,
+"question": "A 60-year-old woman with type 2 diabetes mellitus presents with painless hematuria. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Acute cystitis",
+"B": "Renal calculi",
+"C": "Transitional cell carcinoma of the bladder",
+"D": "Glomerulonephritis"
+},
+"correct_answer": "C"
+},
+{
+"id": 4,
+"question": "What is the recommended compression-to-ventilation ratio for a single rescuer performing adult CPR?",
+"options": {
+"A": "15:2",
+"B": "30:2",
+"C": "30:1",
+"D": "15:1"
+},
+"correct_answer": "B"
+},
+{
+"id": 5,
+"question": "A 25-year-old male presents with acute onset of right lower quadrant abdominal pain, nausea, and low-grade fever. On examination, there is rebound tenderness at McBurney's point. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Acute cholecystitis",
+"B": "Acute pancreatitis",
+"C": "Appendicitis",
+"D": "Diverticulitis"
+},
+"correct_answer": "C"
+},
+{
+"id": 6,
+"question": "Which of the following ECG findings is most characteristic of acute pericarditis?",
+"options": {
+"A": "ST-segment elevation in a concave (scooped) pattern",
+"B": "ST-segment elevation with reciprocal ST depression",
+"C": "Deep Q waves in contiguous leads",
+"D": "Tented T waves with wide QRS"
+},
+"correct_answer": "A"
+},
+{
+"id": 7,
+"question": "A patient sustains a deep laceration to the palmar aspect of the wrist and is unable to flex the thumb. Which tendon is most likely injured?",
+"options": {
+"A": "Flexor digitorum profundus",
+"B": "Flexor pollicis longus",
+"C": "Extensor pollicis longus",
+"D": "Flexor carpi radialis"
+},
+"correct_answer": "B"
+},
+{
+"id": 8,
+"question": "What is the antidote for a known acetaminophen (paracetamol) overdose?",
+"options": {
+"A": "Flumazenil",
+"B": "Naloxone",
+"C": "N-acetylcysteine",
+"D": "Activated charcoal"
+},
+"correct_answer": "C"
+},
+{
+"id": 9,
+"question": "A 70-year-old man with hypertension presents with acute onset of right-sided weakness and aphasia. His symptoms started 90 minutes ago. Non-contrast head CT shows no hemorrhage. Which of the following is the most appropriate next step?",
+"options": {
+"A": "Aspirin 325 mg orally",
+"B": "Intravenous alteplase (tPA) if no contraindications",
+"C": "Immediate carotid endarterectomy",
+"D": "Heparin infusion"
+},
+"correct_answer": "B"
+},
+{
+"id": 10,
+"question": "Which of the following is a classic sign of basal skull fracture?",
+"options": {
+"A": "Battle's sign (mastoid ecchymosis)",
+"B": "Unilateral dilated pupil",
+"C": "Cushing's triad",
+"D": "Decerebrate posturing"
+},
+"correct_answer": "A"
+},
+{
+"id": 11,
+"question": "A 34-year-old woman presents with palpitations, heat intolerance, weight loss despite increased appetite, and tremor. On examination, she has a diffuse goiter and lid lag. Which of the following lab findings is most consistent with her condition?",
+"options": {
+"A": "Elevated TSH, low free T4",
+"B": "Low TSH, elevated free T4",
+"C": "Low TSH, low free T4",
+"D": "Elevated TSH, elevated free T4"
+},
+"correct_answer": "B"
+},
+{
+"id": 12,
+"question": "What is the most common organism responsible for uncomplicated urinary tract infection (UTI) in young, sexually active women?",
+"options": {
+"A": "Klebsiella pneumoniae",
+"B": "Proteus mirabilis",
+"C": "Escherichia coli",
+"D": "Staphylococcus saprophyticus"
+},
+"correct_answer": "C"
+},
+{
+"id": 13,
+"question": "A 55-year-old smoker presents with progressive shortness of breath, chronic cough with sputum production for at least 3 months in 2 consecutive years. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Asthma",
+"B": "Chronic bronchitis",
+"C": "Bronchiectasis",
+"D": "Pulmonary fibrosis"
+},
+"correct_answer": "B"
+},
+{
+"id": 14,
+"question": "In a patient with suspected bacterial meningitis, which of the following is the most appropriate initial step before transferring to the hospital?",
+"options": {
+"A": "Administer oral antibiotics",
+"B": "Give intravenous benzylpenicillin if available and no delay",
+"C": "Perform lumbar puncture immediately",
+"D": "Start high-dose corticosteroids"
+},
+"correct_answer": "B"
+},
+{
+"id": 15,
+"question": "A 28-year-old male presents with severe, colicky flank pain radiating to the groin, nausea, and hematuria. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Acute pyelonephritis",
+"B": "Renal cell carcinoma",
+"C": "Ureteral calculi",
+"D": "Glomerulonephritis"
+},
+"correct_answer": "C"
+},
+{
+"id": 16,
+"question": "Which of the following is a contraindication to the use of nitroglycerin in a patient with chest pain?",
+"options": {
+"A": "History of migraine headaches",
+"B": "Systolic blood pressure less than 90 mmHg",
+"C": "Heart rate greater than 100 beats per minute",
+"D": "Use of phosphodiesterase-5 inhibitor more than 48 hours ago"
+},
+"correct_answer": "B"
+},
+{
+"id": 17,
+"question": "A patient presents with sudden, painless vision loss in one eye described as 'like a curtain falling'. Fundoscopic exam shows a pale retina with a cherry-red spot at the macula. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Retinal detachment",
+"B": "Central retinal artery occlusion",
+"C": "Acute angle-closure glaucoma",
+"D": "Optic neuritis"
+},
+"correct_answer": "B"
+},
+{
+"id": 18,
+"question": "What is the preferred method to control severe external bleeding from a limb?",
+"options": {
+"A": "Elevation of the limb",
+"B": "Direct pressure and pressure dressing",
+"C": "Application of a tourniquet",
+"D": "Ice pack application"
+},
+"correct_answer": "C"
+},
+{
+"id": 19,
+"question": "A 50-year-old chronic alcoholic presents with acute onset of severe epigastric pain radiating to the back, nausea, and vomiting. Serum amylase is 1200 U/L. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Acute cholecystitis",
+"B": "Acute pancreatitis",
+"C": "Perforated peptic ulcer",
+"D": "Myocardial infarction"
+},
+"correct_answer": "B"
+},
+{
+"id": 20,
+"question": "Which of the following is the most common cause of community-acquired pneumonia in adults?",
+"options": {
+"A": "Staphylococcus aureus",
+"B": "Streptococcus pneumoniae",
+"C": "Haemophilus influenzae",
+"D": "Mycoplasma pneumoniae"
+},
+"correct_answer": "B"
+},
+{
+"id": 21,
+"question": "A patient with known diabetes mellitus is found unresponsive. A fingerstick glucose reads 'LO' (below measurable range). After ensuring airway and breathing, what is the immediate treatment?",
+"options": {
+"A": "Intravenous normal saline",
+"B": "Glucagon 1 mg intramuscularly",
+"C": "Oral glucose gel if patient can swallow",
+"D": "Intravenous dextrose 50%"
+},
+"correct_answer": "D"
+},
+{
+"id": 22,
+"question": "Which of the following is the most sensitive and specific test for diagnosing deep vein thrombosis (DVT) in a symptomatic patient?",
+"options": {
+"A": "D-dimer blood test",
+"B": "Venous duplex ultrasound",
+"C": "Impedance plethysmography",
+"D": "Venography"
+},
+"correct_answer": "B"
+},
+{
+"id": 23,
+"question": "A 3-year-old child presents with barking cough, stridor, and respiratory distress that worsens at night. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Epiglottitis",
+"B": "Croup (laryngotracheobronchitis)",
+"C": "Bacterial tracheitis",
+"D": "Foreign body aspiration"
+},
+"correct_answer": "B"
+},
+{
+"id": 24,
+"question": "What is the first-line pharmacologic treatment for stable angina pectoris for immediate symptom relief?",
+"options": {
+"A": "Aspirin",
+"B": "Sublingual nitroglycerin",
+"C": "Metoprolol",
+"D": "Amlodipine"
+},
+"correct_answer": "B"
+},
+{
+"id": 25,
+"question": "A 30-year-old woman presents with fatigue, joint pain, malar rash, and oral ulcers. Laboratory tests reveal positive antinuclear antibody (ANA) and anti-double-stranded DNA. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Rheumatoid arthritis",
+"B": "Systemic lupus erythematosus",
+"C": "Scleroderma",
+"D": "Sjögren's syndrome"
+},
+"correct_answer": "B"
+},
+{
+"id": 26,
+"question": "In a patient with a tension pneumothorax, which of the following clinical findings is most characteristic?",
+"options": {
+"A": "Absent breath sounds on the affected side with hyperresonance",
+"B": "Tracheal deviation toward the affected side",
+"C": "Bilateral crackles and fever",
+"D": "Subcutaneous emphysema only"
+},
+"correct_answer": "A"
+},
+{
+"id": 27,
+"question": "A 65-year-old man presents with a several-month history of progressive difficulty walking, urinary incontinence, and cognitive decline. MRI shows normal pressure hydrocephalus. Which of the following is the triad of symptoms?",
+"options": {
+"A": "Headache, vomiting, papilledema",
+"B": "Gait apraxia, urinary incontinence, dementia",
+"C": "Resting tremor, rigidity, bradykinesia",
+"D": "Muscle weakness, sensory loss, areflexia"
+},
+"correct_answer": "B"
+},
+{
+"id": 28,
+"question": "Which of the following is the most appropriate initial fluid for resuscitation in a burn patient with hypovolemic shock?",
+"options": {
+"A": "Dextrose 5% in water",
+"B": "Lactated Ringer's solution",
+"C": "Normal saline with 5% albumin",
+"D": "Hypertonic saline"
+},
+"correct_answer": "B"
+},
+{
+"id": 29,
+"question": "A 22-year-old college student presents with fever, headache, stiff neck, and photophobia. Kernig's sign is positive. Which of the following is the most appropriate next step?",
+"options": {
+"A": "Head CT before lumbar puncture",
+"B": "Immediate lumbar puncture without CT",
+"C": "Empiric antibiotics and then lumbar puncture",
+"D": "Observation and antipyretics"
+},
+"correct_answer": "A"
+},
+{
+"id": 30,
+"question": "What is the first-line treatment for a mild, localized allergic reaction to a bee sting (urticaria, pruritus, but no respiratory distress or hypotension)?",
+"options": {
+"A": "Intramuscular epinephrine",
+"B": "Oral antihistamine (e.g., diphenhydramine)",
+"C": "Intravenous corticosteroids",
+"D": "Oral albuterol"
+},
+"correct_answer": "B"
+},
+{
+"id": 31,
+"question": "A 55-year-old man with a history of heavy alcohol use presents with jaundice, ascites, and asterixis. Liver enzymes are elevated, and INR is 2.5. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Acute hepatitis A",
+"B": "Alcoholic hepatitis with liver failure",
+"C": "Hemochromatosis",
+"D": "Primary biliary cholangitis"
+},
+"correct_answer": "B"
+},
+{
+"id": 32,
+"question": "Which of the following is a characteristic finding in a patient with a Colles' fracture?",
+"options": {
+"A": "Dinner fork deformity",
+"B": "Gunstock deformity",
+"C": "Swan neck deformity",
+"D": "Boutonniere deformity"
+},
+"correct_answer": "A"
+},
+{
+"id": 33,
+"question": "A 45-year-old woman presents with episodic severe headaches accompanied by unilateral lacrimation, rhinorrhea, and ptosis. Each episode lasts 15-30 minutes and occurs at the same time of day for weeks. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Migraine without aura",
+"B": "Tension-type headache",
+"C": "Cluster headache",
+"D": "Subarachnoid hemorrhage"
+},
+"correct_answer": "C"
+},
+{
+"id": 34,
+"question": "In a patient with suspected opioid overdose presenting with respiratory depression and pinpoint pupils, which medication should be administered immediately?",
+"options": {
+"A": "Flumazenil",
+"B": "Naloxone",
+"C": "Naltrexone",
+"D": "Dextrose"
+},
+"correct_answer": "B"
+},
+{
+"id": 35,
+"question": "A 68-year-old woman with osteoporosis falls and lands on her outstretched hand. She has wrist pain and deformity. Which bone is most commonly fractured in this scenario?",
+"options": {
+"A": "Scaphoid",
+"B": "Distal radius",
+"C": "Ulna styloid",
+"D": "Triquetrum"
+},
+"correct_answer": "B"
+},
+{
+"id": 36,
+"question": "Which of the following is the most common cause of peptic ulcer disease worldwide?",
+"options": {
+"A": "Nonsteroidal anti-inflammatory drugs (NSAIDs)",
+"B": "Helicobacter pylori infection",
+"C": "Zollinger-Ellison syndrome",
+"D": "Cigarette smoking"
+},
+"correct_answer": "B"
+},
+{
+"id": 37,
+"question": "A patient presents with acute shortness of breath, pleuritic chest pain, and hypoxia after a long-haul flight. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Spontaneous pneumothorax",
+"B": "Pulmonary embolism",
+"C": "Acute asthma exacerbation",
+"D": "Pericarditis"
+},
+"correct_answer": "B"
+},
+{
+"id": 38,
+"question": "What is the correct depth of chest compressions for an adult during CPR?",
+"options": {
+"A": "1.5 inches (4 cm)",
+"B": "2 to 2.4 inches (5-6 cm)",
+"C": "2.5 to 3 inches (6.5-7.5 cm)",
+"D": "At least 3 inches (7.5 cm)"
+},
+"correct_answer": "B"
+},
+{
+"id": 39,
+"question": "A 40-year-old man presents with a painless, non-pruritic, annular rash with central clearing on his thigh. He recalls a tick bite 3 weeks ago. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Tinea corporis",
+"B": "Erythema migrans of Lyme disease",
+"C": "Nummular eczema",
+"D": "Psoriasis"
+},
+"correct_answer": "B"
+},
+{
+"id": 40,
+"question": "In a patient with acute ST-segment elevation myocardial infarction (STEMI), what is the time goal from first medical contact to percutaneous coronary intervention (PCI)?",
+"options": {
+"A": "30 minutes",
+"B": "90 minutes",
+"C": "120 minutes",
+"D": "180 minutes"
+},
+"correct_answer": "B"
+},
+{
+"id": 41,
+"question": "A 72-year-old man with benign prostatic hyperplasia presents with acute inability to void, suprapubic pain, and a palpable bladder. Which of the following is the most appropriate initial management?",
+"options": {
+"A": "Alpha-blocker therapy",
+"B": "Urinary catheterization",
+"C": "Transurethral resection of prostate",
+"D": "Fluid restriction"
+},
+"correct_answer": "B"
+},
+{
+"id": 42,
+"question": "Which of the following is a common sign of anaphylaxis that differentiates it from other allergic reactions?",
+"options": {
+"A": "Urticaria only",
+"B": "Hypotension and/or respiratory compromise",
+"C": "Localized edema at the sting site",
+"D": "Pruritus without rash"
+},
+"correct_answer": "B"
+},
+{
+"id": 43,
+"question": "A 25-year-old woman presents with recurrent episodes of abdominal pain, diarrhea, and blood in stool. Colonoscopy shows skip lesions and cobblestone mucosa. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Ulcerative colitis",
+"B": "Crohn's disease",
+"C": "Irritable bowel syndrome",
+"D": "Celiac disease"
+},
+"correct_answer": "B"
+},
+{
+"id": 44,
+"question": "What is the most appropriate first step in managing a patient with a suspected anaphylactic reaction who has stridor and difficulty breathing?",
+"options": {
+"A": "Administer intravenous diphenhydramine",
+"B": "Administer intramuscular epinephrine",
+"C": "Place the patient in a supine position with legs elevated",
+"D": "Start a salbutamol nebulizer"
+},
+"correct_answer": "B"
+},
+{
+"id": 45,
+"question": "A 65-year-old smoker presents with a new onset of hoarseness that has persisted for 6 weeks. Laryngoscopy reveals a lesion on the vocal cord. Which of the following is the most important risk factor?",
+"options": {
+"A": "Alcohol use",
+"B": "Cigarette smoking",
+"C": "Gastroesophageal reflux",
+"D": "Human papillomavirus"
+},
+"correct_answer": "B"
+},
+{
+"id": 46,
+"question": "Which of the following is the most appropriate treatment for a small, uncomplicated superficial burn (first-degree) covering less than 5% of total body surface area?",
+"options": {
+"A": "Apply ice directly to the burn",
+"B": "Cool running water for 10-15 minutes, then aloe vera",
+"C": "Puncture all blisters immediately",
+"D": "Apply topical antibiotic ointment and occlusive dressing"
+},
+"correct_answer": "B"
+},
+{
+"id": 47,
+"question": "A 35-year-old man presents with sudden onset of severe, unilateral, 'thunderclap' headache. He describes it as 'the worst headache of my life'. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Migraine",
+"B": "Tension headache",
+"C": "Subarachnoid hemorrhage",
+"D": "Cluster headache"
+},
+"correct_answer": "C"
+},
+{
+"id": 48,
+"question": "In a patient with suspected acute appendicitis, which of the following physical exam findings is most specific?",
+"options": {
+"A": "Murphy's sign",
+"B": "Rovsing's sign",
+"C": "Cullen's sign",
+"D": "Grey-Turner sign"
+},
+"correct_answer": "B"
+},
+{
+"id": 49,
+"question": "A patient with a history of atrial fibrillation presents with sudden onset of left leg pain, pallor, pulselessness, and paresthesia. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Deep vein thrombosis",
+"B": "Acute arterial embolism",
+"C": "Sciatica",
+"D": "Cellulitis"
+},
+"correct_answer": "B"
+},
+{
+"id": 50,
+"question": "What is the most common cause of acute pancreatitis in adults in the United States?",
+"options": {
+"A": "Hypertriglyceridemia",
+"B": "Gallstones",
+"C": "Alcohol use",
+"D": "Medications"
+},
+"correct_answer": "B"
+},
+{
+"id": 51,
+"question": "A 19-year-old woman presents with sore throat, fever, and fatigue. On exam, she has pharyngeal exudates, tender anterior cervical lymphadenopathy, and splenomegaly. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Streptococcal pharyngitis",
+"B": "Infectious mononucleosis",
+"C": "Acute HIV infection",
+"D": "Diphtheria"
+},
+"correct_answer": "B"
+},
+{
+"id": 52,
+"question": "Which of the following is the most appropriate initial fluid for a patient with diabetic ketoacidosis (DKA)?",
+"options": {
+"A": "Dextrose 5% in 0.45% saline",
+"B": "0.9% normal saline",
+"C": "Lactated Ringer's solution",
+"D": "3% hypertonic saline"
+},
+"correct_answer": "B"
+},
+{
+"id": 53,
+"question": "A 60-year-old man presents with a painless, non-healing ulcer on his lower lip that has been present for 4 months. He has a history of heavy sun exposure. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Aphthous ulcer",
+"B": "Squamous cell carcinoma",
+"C": "Herpes simplex",
+"D": "Traumatic ulcer"
+},
+"correct_answer": "B"
+},
+{
+"id": 54,
+"question": "In the ABCDE approach to a trauma patient, what does 'C' stand for and what is its priority?",
+"options": {
+"A": "Cervical spine immobilization",
+"B": "Circulation with hemorrhage control",
+"C": "Capillary refill assessment",
+"D": "Chest decompression"
+},
+"correct_answer": "B"
+},
+{
+"id": 55,
+"question": "A 4-year-old child presents with high fever, drooling, stridor, and a toxic appearance. He refuses to lie down. Which of the following is the most likely diagnosis and appropriate next step?",
+"options": {
+"A": "Croup; nebulized epinephrine",
+"B": "Epiglottitis; do not examine throat, prepare for airway management",
+"C": "Bacterial tracheitis; oral antibiotics",
+"D": "Peritonsillar abscess; incision and drainage"
+},
+"correct_answer": "B"
+},
+{
+"id": 56,
+"question": "Which of the following lab findings is characteristic of hemolytic anemia?",
+"options": {
+"A": "Low reticulocyte count",
+"B": "Elevated indirect bilirubin",
+"C": "Low lactate dehydrogenase (LDH)",
+"D": "Normal haptoglobin"
+},
+"correct_answer": "B"
+},
+{
+"id": 57,
+"question": "A patient with a history of gout presents with acute, severe pain, redness, and swelling of the first metatarsophalangeal joint. Which of the following is the most appropriate first-line treatment?",
+"options": {
+"A": "Allopurinol",
+"B": "Colchicine or NSAIDs",
+"C": "Probenecid",
+"D": "Intraarticular corticosteroids"
+},
+"correct_answer": "B"
+},
+{
+"id": 58,
+"question": "What is the most common cause of chronic liver disease worldwide?",
+"options": {
+"A": "Alcohol",
+"B": "Hepatitis B virus",
+"C": "Hepatitis C virus",
+"D": "Non-alcoholic fatty liver disease"
+},
+"correct_answer": "B"
+},
+{
+"id": 59,
+"question": "A 28-year-old man is brought to the emergency department after a motorcycle accident. He is awake but confused. His Glasgow Coma Scale (GCS) is 13. Which of the following is the most appropriate next step?",
+"options": {
+"A": "Discharge home with observation instructions",
+"B": "CT scan of the head",
+"C": "Skull X-ray",
+"D": "Lumbar puncture"
+},
+"correct_answer": "B"
+},
+{
+"id": 60,
+"question": "Which of the following is a classic sign of a tension pneumothorax?",
+"options": {
+"A": "Hypotension and jugular venous distension",
+"B": "Hypertension and bradycardia",
+"C": "Absent breath sounds on the ipsilateral side without tracheal deviation",
+"D": "Fever and productive cough"
+},
+"correct_answer": "A"
+},
+{
+"id": 61,
+"question": "A 55-year-old woman presents with acute onset of severe, sharp chest pain that is worse when lying flat and improves when sitting forward. ECG shows diffuse ST-segment elevations. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Acute myocardial infarction",
+"B": "Acute pericarditis",
+"C": "Pulmonary embolism",
+"D": "Aortic dissection"
+},
+"correct_answer": "B"
+},
+{
+"id": 62,
+"question": "In a patient with a simple febrile seizure, which of the following is the most appropriate long-term management?",
+"options": {
+"A": "Chronic antiepileptic medication",
+"B": "Reassurance and no routine medication",
+"C": "Daily phenobarbital",
+"D": "Levetiracetam prophylaxis"
+},
+"correct_answer": "B"
+},
+{
+"id": 63,
+"question": "A 65-year-old man with chronic kidney disease presents with fatigue, bone pain, and a serum calcium of 8.0 mg/dL (normal 8.5-10.2), phosphorus 6.0 mg/dL (normal 2.5-4.5), and PTH 400 pg/mL (normal 10-55). Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Primary hyperparathyroidism",
+"B": "Secondary hyperparathyroidism",
+"C": "Hypoparathyroidism",
+"D": "Malignancy-associated hypercalcemia"
+},
+"correct_answer": "B"
+},
+{
+"id": 64,
+"question": "What is the recommended first aid for a conscious adult with a suspected foreign body airway obstruction (choking) who cannot speak or cough?",
+"options": {
+"A": "Back blows and abdominal thrusts (Heimlich maneuver)",
+"B": "Encourage deep coughing",
+"C": "Give water to drink",
+"D": "Perform blind finger sweep"
+},
+"correct_answer": "A"
+},
+{
+"id": 65,
+"question": "A 30-year-old woman presents with acute onset of right-sided weakness and difficulty speaking. She has a history of migraines with aura. Symptoms resolve completely after 45 minutes. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Ischemic stroke",
+"B": "Transient ischemic attack (TIA)",
+"C": "Migraine with aura",
+"D": "Complex partial seizure"
+},
+"correct_answer": "B"
+},
+{
+"id": 66,
+"question": "Which of the following is the most appropriate treatment for a first-degree burn involving the entire palm of the hand?",
+"options": {
+"A": "Apply a tight pressure dressing",
+"B": "Cool the burn, then apply a non-adherent dressing",
+"C": "Burst blisters and apply silver sulfadiazine",
+"D": "Refer for skin grafting"
+},
+"correct_answer": "B"
+},
+{
+"id": 67,
+"question": "A 45-year-old man presents with a several-month history of daytime sleepiness, loud snoring, and morning headaches. His spouse reports he stops breathing during sleep. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Narcolepsy",
+"B": "Obstructive sleep apnea",
+"C": "Insomnia",
+"D": "Restless legs syndrome"
+},
+"correct_answer": "B"
+},
+{
+"id": 68,
+"question": "In a patient with a suspected scaphoid fracture after a fall on an outstretched hand, but initial X-rays are negative, what is the appropriate next step?",
+"options": {
+"A": "Discharge with no treatment",
+"B": "Apply a thumb spica splint and repeat X-ray in 10-14 days or obtain MRI",
+"C": "Immediate surgical exploration",
+"D": "Full arm cast for 6 weeks"
+},
+"correct_answer": "B"
+},
+{
+"id": 69,
+"question": "A 22-year-old woman presents with palpitations, anxiety, heat intolerance, and weight loss. On exam, she has a fine tremor, warm moist skin, and a diffusely enlarged thyroid. Which of the following lab results is most consistent?",
+"options": {
+"A": "TSH increased, free T4 decreased",
+"B": "TSH decreased, free T4 increased",
+"C": "TSH normal, free T4 normal",
+"D": "TSH increased, free T4 increased"
+},
+"correct_answer": "B"
+},
+{
+"id": 70,
+"question": "What is the most common presenting symptom of a pulmonary embolism?",
+"options": {
+"A": "Hemoptysis",
+"B": "Dyspnea (shortness of breath)",
+"C": "Chest pain",
+"D": "Syncope"
+},
+"correct_answer": "B"
+},
+{
+"id": 71,
+"question": "A patient with a history of coronary artery disease develops sudden, severe shortness of breath and pink, frothy sputum. On auscultation, crackles are heard in both lung fields. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Acute asthma exacerbation",
+"B": "Acute pulmonary edema",
+"C": "Pneumonia",
+"D": "Pneumothorax"
+},
+"correct_answer": "B"
+},
+{
+"id": 72,
+"question": "Which of the following is a classic sign of a ruptured ectopic pregnancy?",
+"options": {
+"A": "Painless vaginal bleeding",
+"B": "Shoulder tip pain and hemodynamic instability",
+"C": "Fever and chills",
+"D": "Polyuria and polydipsia"
+},
+"correct_answer": "B"
+},
+{
+"id": 73,
+"question": "A 50-year-old woman presents with proximal muscle weakness, difficulty rising from a chair, and a heliotrope rash on her eyelids. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Polymyositis",
+"B": "Dermatomyositis",
+"C": "Systemic sclerosis",
+"D": "Myasthenia gravis"
+},
+"correct_answer": "B"
+},
+{
+"id": 74,
+"question": "What is the correct ratio of chest compressions to breaths for a single rescuer performing infant CPR?",
+"options": {
+"A": "15:2",
+"B": "30:2",
+"C": "30:1",
+"D": "15:1"
+},
+"correct_answer": "B"
+},
+{
+"id": 75,
+"question": "A 32-year-old man presents with acute onset of scrotal pain and swelling. He is nauseated. On exam, the testis is tender and elevated. Cremasteric reflex is absent on the affected side. Which of the following is the most likely diagnosis and appropriate action?",
+"options": {
+"A": "Epididymitis; antibiotics",
+"B": "Testicular torsion; immediate surgical exploration",
+"C": "Hydrocele; reassurance",
+"D": "Varicocele; scrotal support"
+},
+"correct_answer": "B"
+},
+{
+"id": 76,
+"question": "Which of the following is the most appropriate first step in managing a patient with a suspected opioid overdose who is unresponsive and not breathing?",
+"options": {
+"A": "Administer naloxone intranasally",
+"B": "Begin rescue breathing or bag-mask ventilation",
+"C": "Start chest compressions",
+"D": "Place in recovery position"
+},
+"correct_answer": "B"
+},
+{
+"id": 77,
+"question": "A 70-year-old man presents with painless jaundice, weight loss, and a palpable gallbladder (Courvoisier's sign). Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Cholelithiasis",
+"B": "Pancreatic cancer",
+"C": "Hepatitis A",
+"D": "Choledocholithiasis"
+},
+"correct_answer": "B"
+},
+{
+"id": 78,
+"question": "In a patient with a severe allergic reaction to a penicillin, which of the following is an appropriate alternative antibiotic for a respiratory infection?",
+"options": {
+"A": "Amoxicillin",
+"B": "Cephalexin (first-generation cephalosporin) – caution, cross-reactivity",
+"C": "Azithromycin",
+"D": "Ampicillin"
+},
+"correct_answer": "C"
+},
+{
+"id": 79,
+"question": "A 25-year-old female presents with acute dysuria, frequency, and urgency. She has no flank pain or fever. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Acute pyelonephritis",
+"B": "Uncomplicated cystitis",
+"C": "Urethritis",
+"D": "Interstitial cystitis"
+},
+"correct_answer": "B"
+},
+{
+"id": 80,
+"question": "What is the most common cause of hyperthyroidism in young women?",
+"options": {
+"A": "Toxic multinodular goiter",
+"B": "Graves' disease",
+"C": "Thyroiditis",
+"D": "Thyroid adenoma"
+},
+"correct_answer": "B"
+},
+{
+"id": 81,
+"question": "A 55-year-old man with a history of heavy alcohol use presents with confusion, ataxia, and nystagmus. Which of the following vitamin deficiency is most likely?",
+"options": {
+"A": "Vitamin B12",
+"B": "Thiamine (B1)",
+"C": "Vitamin D",
+"D": "Niacin (B3)"
+},
+"correct_answer": "B"
+},
+{
+"id": 82,
+"question": "Which of the following is the most appropriate initial treatment for a patient with status epilepticus (continuous seizure activity for >5 minutes)?",
+"options": {
+"A": "Oral phenytoin",
+"B": "Intravenous lorazepam",
+"C": "Intramuscular phenobarbital",
+"D": "Rectal diazepam"
+},
+"correct_answer": "B"
+},
+{
+"id": 83,
+"question": "A 45-year-old woman presents with a sudden, severe headache, nausea, and photophobia. Lumbar puncture shows xanthochromia. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Migraine",
+"B": "Meningitis",
+"C": "Subarachnoid hemorrhage",
+"D": "Subdural hematoma"
+},
+"correct_answer": "C"
+},
+{
+"id": 84,
+"question": "In a patient with a penetrating injury to the chest, which of the following findings is most concerning for cardiac tamponade?",
+"options": {
+"A": "Widened pulse pressure",
+"B": "Muffled heart sounds and jugular venous distension (Beck's triad)",
+"C": "Bilateral crackles",
+"D": "Fever and leukocytosis"
+},
+"correct_answer": "B"
+},
+{
+"id": 85,
+"question": "A 65-year-old woman presents with a painful, red, swollen left calf. She recently had hip surgery. Which of the following is the most appropriate initial diagnostic test?",
+"options": {
+"A": "D-dimer",
+"B": "Compression ultrasound",
+"C": "Venography",
+"D": "CT venography"
+},
+"correct_answer": "B"
+},
+{
+"id": 86,
+"question": "What is the most common symptom of gastroesophageal reflux disease (GERD)?",
+"options": {
+"A": "Dysphagia",
+"B": "Heartburn",
+"C": "Chest pain",
+"D": "Chronic cough"
+},
+"correct_answer": "B"
+},
+{
+"id": 87,
+"question": "A 28-year-old woman presents with acute onset of dyspnea and sharp chest pain that is worse on inspiration. She is taking oral contraceptives. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Pneumothorax",
+"B": "Pulmonary embolism",
+"C": "Pleurisy",
+"D": "Pericarditis"
+},
+"correct_answer": "B"
+},
+{
+"id": 88,
+"question": "Which of the following is the most appropriate first aid for a chemical burn to the eye?",
+"options": {
+"A": "Apply a pressure patch",
+"B": "Irrigate copiously with water or saline for at least 15 minutes",
+"C": "Neutralize the chemical with a weak acid or base",
+"D": "Instill topical anesthetic and refer"
+},
+"correct_answer": "B"
+},
+{
+"id": 89,
+"question": "A 60-year-old man presents with progressive dysphagia to both solids and liquids, regurgitation of undigested food, and halitosis. Barium swallow shows a 'bird beak' appearance. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Esophageal cancer",
+"B": "Achalasia",
+"C": "Peptic stricture",
+"D": "Eosinophilic esophagitis"
+},
+"correct_answer": "B"
+},
+{
+"id": 90,
+"question": "In a patient with a suspected myocardial infarction, which of the following is the most important immediate action?",
+"options": {
+"A": "Obtain a 12-lead ECG",
+"B": "Administer aspirin 325 mg chewed",
+"C": "Administer sublingual nitroglycerin",
+"D": "Obtain cardiac enzymes"
+},
+"correct_answer": "B"
+},
+{
+"id": 91,
+"question": "A 3-year-old child is brought in after ingesting an unknown amount of a parent's iron supplement. Which of the following is a sign of significant iron toxicity?",
+"options": {
+"A": "Metallic taste and vomiting",
+"B": "Hypotension and metabolic acidosis",
+"C": "Miosis and bradycardia",
+"D": "Hyperthermia and dry skin"
+},
+"correct_answer": "B"
+},
+{
+"id": 92,
+"question": "Which of the following is the most common cause of infectious diarrhea in children worldwide?",
+"options": {
+"A": "Campylobacter jejuni",
+"B": "Rotavirus",
+"C": "Salmonella enterica",
+"D": "Giardia lamblia"
+},
+"correct_answer": "B"
+},
+{
+"id": 93,
+"question": "A 50-year-old man presents with a swollen, tender, erythematous right knee without trauma. He has a history of psoriasis. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Septic arthritis",
+"B": "Gout",
+"C": "Pseudogout",
+"D": "Psoriatic arthritis"
+},
+"correct_answer": "D"
+},
+{
+"id": 94,
+"question": "What is the appropriate rate of chest compressions per minute for adult CPR?",
+"options": {
+"A": "60-80 per minute",
+"B": "100-120 per minute",
+"C": "120-140 per minute",
+"D": "80-100 per minute"
+},
+"correct_answer": "B"
+},
+{
+"id": 95,
+"question": "A 35-year-old woman presents with a sudden, severe, unilateral headache, ipsilateral ptosis, and a dilated pupil. She also reports seeing halos around lights. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Migraine with aura",
+"B": "Acute angle-closure glaucoma",
+"C": "Cluster headache",
+"D": "Temporal arteritis"
+},
+"correct_answer": "B"
+},
+{
+"id": 96,
+"question": "Which of the following is the most appropriate first-line medication for chronic stable angina for long-term management to reduce mortality?",
+"options": {
+"A": "Nitroglycerin patch",
+"B": "Amlodipine",
+"C": "Metoprolol (beta-blocker)",
+"D": "Ranolazine"
+},
+"correct_answer": "C"
+},
+{
+"id": 97,
+"question": "A 22-year-old college student presents with fever, sore throat, and a diffuse maculopapular rash that started on the face and spread downward. He has not been vaccinated. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Rubella",
+"B": "Rubeola (measles)",
+"C": "Scarlet fever",
+"D": "Fifth disease"
+},
+"correct_answer": "B"
+},
+{
+"id": 98,
+"question": "In a patient with a snakebite to the extremity, which of the following is an appropriate first aid measure?",
+"options": {
+"A": "Apply a tourniquet proximal to the bite",
+"B": "Immobilize the limb and keep it at or below heart level",
+"C": "Make an incision and suck out venom",
+"D": "Apply ice to the bite area"
+},
+"correct_answer": "B"
+},
+{
+"id": 99,
+"question": "A 60-year-old woman presents with acute, severe lower back pain and fever. She has a history of recent urinary tract infection. On exam, she has costovertebral angle tenderness. Which of the following is the most likely diagnosis?",
+"options": {
+"A": "Lumbar strain",
+"B": "Acute pyelonephritis",
+"C": "Renal colic",
+"D": "Vertebral fracture"
+},
+"correct_answer": "B"
+},
+{
+"id": 100,
+"question": "Which of the following is the most common presenting symptom of type 1 diabetes mellitus in children?",
+"options": {
+"A": "Weight gain",
+"B": "Polyuria, polydipsia, and weight loss",
+"C": "Recurrent infections",
+"D": "Blurred vision"
+},
+"correct_answer": "B"
+}
+]
+

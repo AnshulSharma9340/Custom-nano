@@ -163,7 +163,7 @@ for group in optimizer.param_groups:
 # SFT data mixture and DataLoader
 identity_conversations_filepath = os.path.join(base_dir, "identity_conversations.jsonl")
 # Your medical SFT data path
-medical_sft_filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/sft_ready/combined_sft.jsonl")
+medical_sft_filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/clean_nanochat_master_sft_ready.jsonl")
 
 train_tasks = [
     SmolTalk(split="train"),                                                    # 460K general conversations
