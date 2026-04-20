@@ -11,3 +11,11 @@ eval_bundle/
 # Local setup
 CLAUDE.md
 wandb/
+nanochat_cache/
+data/
+logs/
+*.log
+*.csv
+*.jsonl
+*.backup
+*.tgz
