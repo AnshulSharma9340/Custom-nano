@@ -162,14 +162,19 @@ for group in optimizer.param_groups:
 
 # SFT data mixture and DataLoader
 identity_conversations_filepath = os.path.join(base_dir, "identity_conversations.jsonl")
+# Your medical SFT data path
+medical_sft_filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/clean_nanochat_master_sft_ready.jsonl")
+
 train_tasks = [
-    SmolTalk(split="train"), # 460K rows of general conversations
-    CustomJSON(filepath=identity_conversations_filepath), # 1000 rows of synthetic identity conversations
-    CustomJSON(filepath=identity_conversations_filepath), # 2 epochs of these
-    *[MMLU(subset="auxiliary_train", split="train") for _ in range(args.mmlu_epochs)], # 100K rows per epoch
-    *[GSM8K(subset="main", split="train") for _ in range(args.gsm8k_epochs)], # 8K rows per epoch
-    SimpleSpelling(size=200000, split="train"), # 200K rows of Simple Spelling (e.g. spell the word 'apple')
-    SpellingBee(size=80000, split="train"), # 80K rows of Spelling Bee (e.g. how many 'r' are in 'strawberry'?)
+    SmolTalk(split="train"),                                                    # 460K general conversations
+    CustomJSON(filepath=identity_conversations_filepath),                        # identity conversations
+    CustomJSON(filepath=identity_conversations_filepath),                        # 2 epochs of identity
+    CustomJSON(filepath=medical_sft_filepath),                                  # 300K medical conversations
+    CustomJSON(filepath=medical_sft_filepath),                                  # 2 epochs of medical
+    *[MMLU(subset="auxiliary_train", split="train") for _ in range(args.mmlu_epochs)],
+    *[GSM8K(subset="main", split="train") for _ in range(args.gsm8k_epochs)],
+    SimpleSpelling(size=200000, split="train"),
+    SpellingBee(size=80000, split="train"),
 ]
 train_dataset = TaskMixture(train_tasks)
 print0(f"Training mixture: {len(train_dataset):,} rows (MMLU x{args.mmlu_epochs}, GSM8K x{args.gsm8k_epochs})")

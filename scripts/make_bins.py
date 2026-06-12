@@ -121,7 +121,7 @@ def process_source(
     t_start    = time.time()
 
     for text in iter_jsonl(data_dir, text_field, min_chars):
-        ids = tokenizer.encode(text, bos=True, eos=True)
+        ids = tokenizer.encode(text, prepend=tokenizer.get_bos_token_id())
         buf.extend(ids)
         buf_size  += len(ids)
         total_docs += 1
